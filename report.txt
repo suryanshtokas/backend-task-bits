@@ -1,11 +1,11 @@
 Traffic & Usage Analysis
-------------------------------
+---------------
 Total API Requests Logged: 61559
 GET Requests: 259
 POST Requests: 61300
 
 Endpoint Popularity: (ones with >10 hits)
-------------------------------
+---------------
 /courses -> 26024 (42.27%)
 /sections -> 26104 (42.4%)
 /exam_clash -> 2898 (4.71%)
@@ -14,31 +14,31 @@ Endpoint Popularity: (ones with >10 hits)
 / -> 170 (0.28%)
 
 Performance Metrics
-------------------------------
+---------------
 Endpoint: /courses
 -Average Response Time: 0.559ms
--Max Response Time: {max_rt}ms
+-Max Response Time: 9.135ms
 
 Endpoint: /sections
 -Average Response Time: 0.126ms
--Max Response Time: {max_rt}ms
+-Max Response Time: 4.97ms
 
 Endpoint: /exam_clash
 -Average Response Time: 0.066ms
--Max Response Time: {max_rt}ms
+-Max Response Time: 1.336ms
 
 Endpoint: /generate
 -Average Response Time: 94.72ms
--Max Response Time: {max_rt}ms
+-Max Response Time: 387.036ms
 
 Endpoint: /list_huels
 -Average Response Time: 0.287ms
--Max Response Time: {max_rt}ms
+-Max Response Time: 10.958ms
 
 
-------------------------------
+---------------
 Application-Specific Insights
-------------------------------
+---------------
 Timetable Generation strategy Usage:
 - Heuristic Backtracking: 3806 times
 - Iterative Random Sampling: 406 times
@@ -46,9 +46,9 @@ Timetable Generation strategy Usage:
 Average Timetables found per /generate call: 220.92
 Total number of timetables generated: 1037447
 
-------------------------------
+---------------
 Unique ID analysis
-------------------------------
+---------------
 Total unique IDs found: 1426
 Batch of 2022: 206 unique IDs
 Batch of 2023: 277 unique IDs

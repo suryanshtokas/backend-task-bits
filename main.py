@@ -11,10 +11,8 @@ report_1 = ""
 report_2 = ""
 
 dashes = ""
-for i in range(0, len(report_1) + 5):
+for i in range(0, 15):
     dashes += "-"
-report_1 += dashes
-
 
 with open("timetable.log", "r") as file:
     raw = file.readlines()
@@ -42,6 +40,7 @@ with open("timetable.log", "r") as file:
 def api_req():
     global report_1
     report_1 += "Traffic & Usage Analysis\n"
+    report_1 += dashes
     report_1 += "\nTotal API Requests Logged: " + str(len(post_requests)+len(get_requests))
     report_1 += "\nGET Requests: " + str(len(get_requests))
     report_1 += "\nPOST Requests: " + str(len(post_requests))
