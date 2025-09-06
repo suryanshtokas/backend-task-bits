@@ -48,15 +48,16 @@ def main():
 
     return final_matrix, types, name_dict
 
-# final_matrix, types, name_dict = main()
-
 def print_final(final_matrix):
     for i in final_matrix:
         for j in i:
             print(j, end=" ")
         print()
 
-# print_final(final_matrix)
+
+if __name__ == "__main__":
+    final_matrix, types, name_dict = main()
+    print_final(final_matrix)
 
 # the types (up to down and left to right in this order only)
 """
